@@ -18,7 +18,7 @@ payload ===> {
     "price": 300,
     "fator": 5
 }
-# listando all produtos
+# listando todos produtos
 GET: localhost:3001/product
 
 # criando customer
@@ -61,7 +61,7 @@ payload ===> {
         }
     ]
 }
-# criando o carrinho de compras
+# criando um carrinho de compras
 POST localhost:3001/shoppingcard
 payload ==> 
 
@@ -69,7 +69,7 @@ payload ==>
     "products":[],
     "customer": "60d467aff66abf06cd6c0979"
 }
-# add produto mo carrinho de compras
+# adicionando produtos no carrinho de compras
 PUT localhost:3001/shoppingcard/60d467faf66abf06cd6c097e
 
 payload ==> 
@@ -78,7 +78,7 @@ payload ==>
     "products": ["60d46784f66abf06cd6c0973"]
 }
 
-# removendo produto mo carrinho de compras
+# removendo um produto no carrinho de compras
 DELETE localhost:3001/shoppingcard/60d467faf66abf06cd6c097e
 {
     "product": "60d46784f66abf06cd6c0973"
